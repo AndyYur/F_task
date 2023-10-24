@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Итоговая практическая задача</title>
+</head>
+<body>
+    <h1><center>Предсказание результирующих параметров <br/> сварного шва</center></h1>
+
+    {% if message %}
+    <p align="center"><b>{{ message }}</b></p>
+    {% endif %}
+
+   <div align="center">
+    <form action="" method="post">
+        <table >
+        <tr>
+            <td><label for="IW">ток сварки </label></td><br/>
+            <td><input type="number" name="IW"></td> <td>(диапазон значений 43.0-49.0)</td>
+        </tr>
+        <tr>
+            <td><label for="IF">ток фокусировки пучка </label></td>
+            <td><input type="number" name="IF"></td><td>(диапазон значений 130.0-150.0)</td>
+        </tr>
+        <tr>
+            <td><label for="VW">скорость сварки </label></td>
+            <td><input type="number" name="VW"></td><td>(диапазон значений 4.5-12.0)</td>
+        </tr>
+        <tr>
+            <td><label for="FP">расстояние до поверхности </label></td><td>
+            <input type="number" name="FP"></td><td>(диапазон значений 50.0-125.0)</td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center"><input type="submit"></td>
+        </tr>
+    </table>
+    </form></div>
+</body>
+</html>
